@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGA", "SGA\SGA.csproj", "{9A369E50-145B-4DDB-AE08-B5F8291275E1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Presentation", "3 - Presentation", "{B36B7274-5714-4146-93C8-8F5B5D929BE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGA.Tests", "SGA.Tests\SGA.Tests.csproj", "{38F24ADA-AB50-4194-A290-F8B63E7C0132}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{7B1B8C84-5917-404C-B99E-E2DB7B5BB19A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Domain", "0 - Domain", "{CD933247-7048-4BF7-B102-E914CEC143F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Infrastructure", "1 - Infrastructure", "{AFE151C5-0915-4741-8C84-6DB50A18EFC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - CrossCutting", "1.1 - CrossCutting", "{2215BD02-7BC0-463E-BCC4-F1A07D93C4A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 - Data", "1.2 - Data", "{81DA6D60-CF25-4211-92CB-F2B306C88325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGA.Domain", "SGA.Domain\SGA.Domain.csproj", "{CC06C5BC-D421-4ADC-9B74-05F012B36EEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +23,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A369E50-145B-4DDB-AE08-B5F8291275E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A369E50-145B-4DDB-AE08-B5F8291275E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A369E50-145B-4DDB-AE08-B5F8291275E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A369E50-145B-4DDB-AE08-B5F8291275E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38F24ADA-AB50-4194-A290-F8B63E7C0132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38F24ADA-AB50-4194-A290-F8B63E7C0132}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38F24ADA-AB50-4194-A290-F8B63E7C0132}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38F24ADA-AB50-4194-A290-F8B63E7C0132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC06C5BC-D421-4ADC-9B74-05F012B36EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC06C5BC-D421-4ADC-9B74-05F012B36EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC06C5BC-D421-4ADC-9B74-05F012B36EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC06C5BC-D421-4ADC-9B74-05F012B36EEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2215BD02-7BC0-463E-BCC4-F1A07D93C4A5} = {AFE151C5-0915-4741-8C84-6DB50A18EFC9}
+		{81DA6D60-CF25-4211-92CB-F2B306C88325} = {AFE151C5-0915-4741-8C84-6DB50A18EFC9}
+		{CC06C5BC-D421-4ADC-9B74-05F012B36EEC} = {CD933247-7048-4BF7-B102-E914CEC143F3}
 	EndGlobalSection
 EndGlobal
