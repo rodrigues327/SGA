@@ -1,6 +1,11 @@
 ﻿using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 using SGA.Infrastructure.SharedKernel.IoC;
+using SGA.WebApi.DependencyResolution;
 using System.Web.Mvc;
+using WebActivatorEx;
+
+[assembly: System.Web.PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
+[assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
 
 namespace SGA.WebApi.DependencyResolution
 {

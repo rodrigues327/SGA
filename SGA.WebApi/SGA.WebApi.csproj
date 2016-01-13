@@ -123,6 +123,10 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.1.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -231,6 +235,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SGA.Application\SGA.Application.csproj">
+      <Project>{eb3774e4-4322-4504-9af0-9cfcb711a7f6}</Project>
+      <Name>SGA.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SGA.Infrastructure.SharedKernel\SGA.Infrastructure.SharedKernel.csproj">
       <Project>{a20e8b31-945b-4130-9ff1-fd97fc51360d}</Project>
       <Name>SGA.Infrastructure.SharedKernel</Name>

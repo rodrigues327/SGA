@@ -34,7 +34,7 @@ namespace SGA.WebApi
 
         protected void Application_EndRequest()
         {
-            StructuremapMvc.StructureMapDependencyScope.CurrentNestedContainer.EjectAllInstancesOf<ILifecycleContext>();
+            StructuremapMvc.StructureMapDependencyScope.CurrentNestedContainer?.EjectAllInstancesOf<ILifecycleContext>();
         }
     }
 }

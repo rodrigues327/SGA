@@ -5,8 +5,6 @@ namespace SGA.WebApi.DependencyResolution
 {
     public class StructureMapScopeModule : IHttpModule
     {
-        #region Public Methods and Operators
-
         public void Dispose()
         {
         }
@@ -20,7 +18,5 @@ namespace SGA.WebApi.DependencyResolution
                 StructuremapMvc.StructureMapDependencyScope.DisposeNestedContainer();
             };
         }
-
-        #endregion Public Methods and Operators
     }
 }
