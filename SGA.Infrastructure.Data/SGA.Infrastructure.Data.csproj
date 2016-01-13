@@ -31,8 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Context\DbContextFactory.cs" />
-    <Compile Include="Context\IDbContext.cs" />
-    <Compile Include="Context\IDbContextFactory.cs" />
     <Compile Include="Context\SGAContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Core\BaseRepository.cs" />
@@ -56,6 +54,10 @@
     <ProjectReference Include="..\SGA.Domain\SGA.Domain.csproj">
       <Project>{cc06c5bc-d421-4adc-9b74-05f012b36eec}</Project>
       <Name>SGA.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGA.Infrastructure.SharedKernel\SGA.Infrastructure.SharedKernel.csproj">
+      <Project>{a20e8b31-945b-4130-9ff1-fd97fc51360d}</Project>
+      <Name>SGA.Infrastructure.SharedKernel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

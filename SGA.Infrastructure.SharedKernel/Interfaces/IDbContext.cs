@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 
-namespace SGA.Infrastructure.Data.Context
+namespace SGA.Infrastructure.SharedKernel.Interfaces
 {
     public interface IDbContext
     {

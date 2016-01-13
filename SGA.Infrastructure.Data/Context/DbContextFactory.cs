@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SGA.Infrastructure.SharedKernel.Interfaces;
+using System;
 
 namespace SGA.Infrastructure.Data.Context
 {

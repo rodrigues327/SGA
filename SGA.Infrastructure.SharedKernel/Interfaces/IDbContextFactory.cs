@@ -1,4 +1,4 @@
-﻿namespace SGA.Infrastructure.Data.Context
+﻿namespace SGA.Infrastructure.SharedKernel.Interfaces
 {
     public interface IDbContextFactory<T> where T : IDbContext
     {

@@ -1,5 +1,5 @@
 ﻿using SGA.Domain.Interfaces.Repository.Core;
-using SGA.Infrastructure.Data.Context;
+using SGA.Infrastructure.SharedKernel.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
