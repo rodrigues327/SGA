@@ -30,7 +30,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Entities\Aluno.cs" />
+    <Compile Include="Entities\AlunoFinanceiro.cs" />
+    <Compile Include="Entities\AlunoTurma.cs" />
+    <Compile Include="Entities\AlunoTurmaDisciplina.cs" />
+    <Compile Include="Entities\AlunoTurmaDocumento.cs" />
     <Compile Include="Entities\Core\BaseEntity.cs" />
+    <Compile Include="Entities\Curso.cs" />
+    <Compile Include="Entities\CursoDisciplina.cs" />
+    <Compile Include="Entities\Disciplina.cs" />
+    <Compile Include="Entities\FormaPagamento.cs" />
+    <Compile Include="Entities\Instituicao.cs" />
+    <Compile Include="Entities\Local.cs" />
+    <Compile Include="Entities\P001.cs" />
+    <Compile Include="Entities\P002.cs" />
+    <Compile Include="Entities\Parceiro.cs" />
+    <Compile Include="Entities\Professor.cs" />
+    <Compile Include="Entities\TipoCurso.cs" />
+    <Compile Include="Entities\Turma.cs" />
+    <Compile Include="Entities\TurmaDisciplina.cs" />
+    <Compile Include="Entities\TurmaDisciplinaCalendario.cs" />
+    <Compile Include="Entities\Turno.cs" />
     <Compile Include="Interfaces\Repository\Core\IBaseRepository.cs" />
     <Compile Include="Interfaces\Services\Core\IBaseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
