@@ -58,6 +58,7 @@
     <Compile Include="EntityMapping\usuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Core\BaseRepository.cs" />
+    <Compile Include="Repositories\InstituicaoRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

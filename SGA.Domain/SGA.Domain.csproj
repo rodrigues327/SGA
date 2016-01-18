@@ -52,7 +52,9 @@
     <Compile Include="Entities\TurmaDisciplinaCalendario.cs" />
     <Compile Include="Entities\Turno.cs" />
     <Compile Include="Interfaces\Repository\Core\IBaseRepository.cs" />
+    <Compile Include="Interfaces\Repository\IInstituicaoRepository.cs" />
     <Compile Include="Interfaces\Services\Core\IBaseService.cs" />
+    <Compile Include="Interfaces\Services\IInstituicaoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

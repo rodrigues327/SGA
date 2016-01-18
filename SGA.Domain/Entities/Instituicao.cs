@@ -4,13 +4,13 @@ namespace SGA.Domain.Entities
 {
     public class Instituicao : BaseEntity
     {
-        public int cd_instituicao { get; set; }
-        public string instituicao { get; set; }
-        public string razaosocial { get; set; }
-        public string cnpj { get; set; }
-        public string endereco { get; set; }
-        public string bairro { get; set; }
-        public string cidade { get; set; }
-        public string estado { get; set; }
+        public int CdInstituicao { get; set; }
+        public string Nome { get; set; }
+        public string Razaosocial { get; set; }
+        public string Cnpj { get; set; }
+        public string Endereco { get; set; }
+        public string Bairro { get; set; }
+        public string Cidade { get; set; }
+        public string Estado { get; set; }
     }
 }
