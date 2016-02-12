@@ -30,33 +30,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Context\DbContextFactory.cs" />
-    <Compile Include="Context\SGAContext.cs" />
-    <Compile Include="EntityMapping\AlunoMap.cs" />
-    <Compile Include="EntityMapping\AlunoFinanceiroMap.cs" />
-    <Compile Include="EntityMapping\AlunoTurmaMap.cs" />
-    <Compile Include="EntityMapping\alunosturmasdisciplinaMap.cs" />
-    <Compile Include="EntityMapping\alunosturmasdocumentoMap.cs" />
-    <Compile Include="EntityMapping\CursoMap.cs" />
-    <Compile Include="EntityMapping\CursoDisciplinaMap.cs" />
-    <Compile Include="EntityMapping\DisciplinaMap.cs" />
-    <Compile Include="EntityMapping\FormaPagamentoMap.cs" />
-    <Compile Include="EntityMapping\gruposMap.cs" />
-    <Compile Include="EntityMapping\gruposmenuMap.cs" />
-    <Compile Include="EntityMapping\InstituicaoMap.cs" />
-    <Compile Include="EntityMapping\localMap.cs" />
-    <Compile Include="EntityMapping\menuMap.cs" />
-    <Compile Include="EntityMapping\P001Map.cs" />
-    <Compile Include="EntityMapping\P002Map.cs" />
-    <Compile Include="EntityMapping\ParceiroMap.cs" />
-    <Compile Include="EntityMapping\ProfessorMap.cs" />
-    <Compile Include="EntityMapping\TipoCursoMap.cs" />
-    <Compile Include="EntityMapping\TurmaMap.cs" />
-    <Compile Include="EntityMapping\TurmaDisciplinaMap.cs" />
-    <Compile Include="EntityMapping\TurmaDisciplinaCalendarioMap.cs" />
-    <Compile Include="EntityMapping\turnoMap.cs" />
-    <Compile Include="EntityMapping\usuarioMap.cs" />
+    <Compile Include="EntityFramework\Context\DbContextFactory.cs" />
+    <Compile Include="EntityFramework\Context\SgaContext.cs" />
+    <Compile Include="EntityFramework\EntityMapping\AlunoMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\AlunoFinanceiroMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\AlunoTurmaMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\alunosturmasdisciplinaMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\alunosturmasdocumentoMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\CursoMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\CursoDisciplinaMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\DisciplinaMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\FormaPagamentoMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\gruposMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\gruposmenuMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\InstituicaoMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\localMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\menuMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\P001Map.cs" />
+    <Compile Include="EntityFramework\EntityMapping\P002Map.cs" />
+    <Compile Include="EntityFramework\EntityMapping\ParceiroMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\ProfessorMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\TipoCursoMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\TurmaMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\TurmaDisciplinaMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\TurmaDisciplinaCalendarioMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\turnoMap.cs" />
+    <Compile Include="EntityFramework\EntityMapping\usuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistryDsl.cs" />
     <Compile Include="Repositories\Core\BaseRepository.cs" />
     <Compile Include="Repositories\InstituicaoRepository.cs" />
   </ItemGroup>
@@ -68,6 +69,14 @@
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.0.1.318, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\structuremap.4.0.1.318\lib\net40\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap.Net4, Version=4.0.1.318, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\structuremap.4.0.1.318\lib\net40\StructureMap.Net4.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

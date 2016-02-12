@@ -16,6 +16,7 @@ namespace SGA.WebApi
         protected void Application_Start()
         {
             var container = IoC.Initialize();
+
             var config = GlobalConfiguration.Configuration;
             config.Services.Replace(typeof(IHttpControllerActivator), new ServiceActivator(container));
 
@@ -34,7 +35,7 @@ namespace SGA.WebApi
 
         protected void Application_EndRequest()
         {
-            StructuremapMvc.StructureMapDependencyScope.CurrentNestedContainer?.EjectAllInstancesOf<ILifecycleContext>();
+            StructuremapMvc.StructureMapDependencyScope?.CurrentNestedContainer?.EjectAllInstancesOf<ILifecycleContext>();
         }
     }
 }

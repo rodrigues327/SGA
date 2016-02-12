@@ -12,7 +12,8 @@ namespace SGA.WebApi.Controllers
         public ValuesController(IContainer iocContaine)
         {
             _iocContaine = iocContaine;
-            var test = iocContaine.GetInstance<IAlunoService>();
+            var test = iocContaine.GetInstance<IInstituicaoAppService>();
+            var test2 = test.GetAll();
         }
 
         // GET api/values

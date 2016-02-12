@@ -1,4 +1,6 @@
-﻿using SGA.Domain.Interfaces.Repository.Core;
+﻿using SGA.Domain.Entities.Core;
+using SGA.Domain.Interfaces.Repository.Core;
+using SGA.Infrastructure.Data.EntityFramework.Context;
 using SGA.Infrastructure.SharedKernel.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -7,7 +9,7 @@ using System.Linq;
 
 namespace SGA.Infrastructure.Data.Repositories.Core
 {
-    public class BaseRepository<TEntity> : IDisposable, IBaseRepository<TEntity> where TEntity : class
+    public class BaseRepository<TEntity> : IDisposable, IBaseRepository<TEntity> where TEntity : BaseEntity
     {
         private bool _disposed;
 
@@ -15,7 +17,7 @@ namespace SGA.Infrastructure.Data.Repositories.Core
 
         internal IDbSet<TEntity> DbSet;
 
-        public BaseRepository(IDbContextFactory<IDbContext> contextFactory)
+        public BaseRepository(IDbContextFactory<SgaContext> contextFactory)
         {
             Context = contextFactory.Get();
             DbSet = Context.Set<TEntity>();

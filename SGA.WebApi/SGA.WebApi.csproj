@@ -144,6 +144,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\InstituicaoController.cs" />
     <Compile Include="DependencyResolution\ControllerConvention.cs" />
     <Compile Include="DependencyResolution\ServiceActivator.cs" />
     <Compile Include="DependencyResolution\StructuremapMvc.cs" />
@@ -239,6 +240,14 @@
       <Project>{eb3774e4-4322-4504-9af0-9cfcb711a7f6}</Project>
       <Name>SGA.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SGA.Domain\SGA.Domain.csproj">
+      <Project>{cc06c5bc-d421-4adc-9b74-05f012b36eec}</Project>
+      <Name>SGA.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGA.Infrastructure.Data\SGA.Infrastructure.Data.csproj">
+      <Project>{53a5bc7b-8af1-4a31-8bb9-da6b0373b818}</Project>
+      <Name>SGA.Infrastructure.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SGA.Infrastructure.SharedKernel\SGA.Infrastructure.SharedKernel.csproj">
       <Project>{a20e8b31-945b-4130-9ff1-fd97fc51360d}</Project>
       <Name>SGA.Infrastructure.SharedKernel</Name>
@@ -251,6 +260,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

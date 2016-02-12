@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using SGA.Domain.Entities.Core;
+using System.Collections.Generic;
 
 namespace SGA.Domain.Interfaces.Services.Core
 {
-    public interface IBaseService<TEntity> where TEntity : class
+    public interface IBaseService<TEntity> where TEntity : BaseEntity
     {
         void Add(TEntity obj);
 

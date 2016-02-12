@@ -30,13 +30,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IAlunoService.cs" />
+    <Compile Include="Interfaces\IAlunoAppService.cs" />
     <Compile Include="Interfaces\Core\IAppBaseService.cs" />
+    <Compile Include="Interfaces\IInstituicaoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\AlunoService.cs" />
+    <Compile Include="RegistryDsl.cs" />
+    <Compile Include="Services\AlunoAppService.cs" />
     <Compile Include="Services\Core\AppBaseService.cs" />
+    <Compile Include="Services\InstituicaoAppService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SGA.Domain\SGA.Domain.csproj">
+      <Project>{cc06c5bc-d421-4adc-9b74-05f012b36eec}</Project>
+      <Name>SGA.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SGA.Infrastructure.SharedKernel\SGA.Infrastructure.SharedKernel.csproj">
       <Project>{a20e8b31-945b-4130-9ff1-fd97fc51360d}</Project>
       <Name>SGA.Infrastructure.SharedKernel</Name>
@@ -55,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

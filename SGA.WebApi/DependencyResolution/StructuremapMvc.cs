@@ -4,7 +4,7 @@ using SGA.WebApi.DependencyResolution;
 using System.Web.Mvc;
 using WebActivatorEx;
 
-[assembly: System.Web.PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
+[assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
 [assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
 
 namespace SGA.WebApi.DependencyResolution
