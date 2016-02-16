@@ -10,7 +10,7 @@ namespace SGA.Infrastructure.Data.EntityFramework.EntityMapping
             // Table & Column Mappings
             ToTable("instituicoes");
 
-            HasKey(t => t.Guid);
+            HasKey(t => t.CdInstituicao);
             Property(t => t.CdInstituicao).HasColumnName("cd_instituicao");
             Property(t => t.Nome).HasColumnName("instituicao").HasMaxLength(50);
             Property(t => t.Razaosocial).HasColumnName("razaosocial").HasMaxLength(70); ;

@@ -2,8 +2,8 @@
 {
     public class BaseEntity
     {
-        private string _guid;
+        // private string _guid;
 
-        public string Guid { get; set; }
+        // public string Guid { get; set; }
     }
 }

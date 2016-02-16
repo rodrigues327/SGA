@@ -9,8 +9,9 @@ namespace SGA.Infrastructure.Data.EntityFramework.EntityMapping
         {
             // Table & Column Mappings
             ToTable("alunosfinanceiro");
+
             // Primary Key
-            HasKey(t => t.Guid);
+            this.HasKey(t => new { t.cd_aluno, t.cd_turma, t.cd_mensalidade });
             this.Property(t => t.cd_aluno).HasColumnName("cd_aluno");
             this.Property(t => t.cd_turma).HasColumnName("cd_turma");
             this.Property(t => t.cd_mensalidade).HasColumnName("cd_mensalidade");
