@@ -12,6 +12,7 @@ namespace SGA.Infrastructure.Data
             For<IDbContextFactory<SgaContext>>().Use(new DbContextFactory<SgaContext>());
 
             For<IInstituicaoRepository>().Use<InstituicaoRepository>();
+            For<IAlunoRepository>().Use<AlunoRepository>();
         }
     }
 }

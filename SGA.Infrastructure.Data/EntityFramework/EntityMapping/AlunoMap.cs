@@ -14,6 +14,9 @@ namespace SGA.Infrastructure.Data.EntityFramework.EntityMapping
             HasKey(t => t.CdAluno);
 
             // Properties
+            Property(t => t.CdAluno).HasColumnName("cd_aluno");
+
+            // Properties
             Property(t => t.Nome)
                 .HasMaxLength(50);
 

@@ -8,6 +8,7 @@ namespace SGA.Application
         public RegistryDsl()
         {
             For<IInstituicaoAppService>().Use<InstituicaoAppService>();
+            For<IAlunoAppService>().Use<AlunoAppService>();
         }
     }
 }

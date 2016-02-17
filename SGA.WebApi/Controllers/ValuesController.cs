@@ -1,5 +1,4 @@
-﻿using SGA.Application.Interfaces;
-using StructureMap;
+﻿using StructureMap;
 using System.Collections.Generic;
 using System.Web.Http;
 
@@ -11,9 +10,6 @@ namespace SGA.WebApi.Controllers
 
         public ValuesController(IContainer iocContaine)
         {
-            _iocContaine = iocContaine;
-            var test = iocContaine.GetInstance<IAlunoAppService>();
-            var test2 = test.GetAll();
         }
 
         // GET api/values
