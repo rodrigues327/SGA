@@ -13,6 +13,7 @@ namespace SGA.Infrastructure.Data
 
             For<IInstituicaoRepository>().Use<InstituicaoRepository>();
             For<IAlunoRepository>().Use<AlunoRepository>();
+            For<ICursoRepository>().Use<CursoRepository>();
         }
     }
 }
