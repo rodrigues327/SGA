@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SGA.Web\SGA.Web.csproj">
-      <Project>{B68ECD02-D4C4-47A4-915C-4CC871C0FC7D}</Project>
+      <Project>{2ede0669-16c9-49ee-bab8-40097337f319}</Project>
       <Name>SGA.Web</Name>
     </ProjectReference>
   </ItemGroup>
