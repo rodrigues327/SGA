@@ -9,6 +9,7 @@ namespace SGA.Application
         {
             For<IInstituicaoAppService>().Use<InstituicaoAppService>();
             For<IAlunoAppService>().Use<AlunoAppService>();
+            For<ICursoAppService>().Use<CursoAppService>();
         }
     }
 }
