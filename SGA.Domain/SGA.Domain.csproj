@@ -53,13 +53,16 @@
     <Compile Include="Entities\Turno.cs" />
     <Compile Include="Interfaces\Repository\Core\IBaseRepository.cs" />
     <Compile Include="Interfaces\Repository\IAlunoRepository.cs" />
+    <Compile Include="Interfaces\Repository\ICursoRepository.cs" />
     <Compile Include="Interfaces\Repository\IInstituicaoRepository.cs" />
     <Compile Include="Interfaces\Services\Core\IBaseService.cs" />
     <Compile Include="Interfaces\Services\IAlunoService.cs" />
+    <Compile Include="Interfaces\Services\ICursoService.cs" />
     <Compile Include="Interfaces\Services\IInstituicaoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Core\BaseService.cs" />
     <Compile Include="Services\AlunoService.cs" />
+    <Compile Include="Services\CursoService.cs" />
     <Compile Include="Services\InstituicaoService.cs" />
   </ItemGroup>
   <ItemGroup>

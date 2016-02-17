@@ -32,11 +32,13 @@
   <ItemGroup>
     <Compile Include="Interfaces\IAlunoAppService.cs" />
     <Compile Include="Interfaces\Core\IAppBaseService.cs" />
+    <Compile Include="Interfaces\CursoAppService.cs" />
     <Compile Include="Interfaces\IInstituicaoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistryDsl.cs" />
     <Compile Include="Services\AlunoAppService.cs" />
     <Compile Include="Services\Core\AppBaseService.cs" />
+    <Compile Include="Services\CursoAppService.cs" />
     <Compile Include="Services\InstituicaoAppService.cs" />
   </ItemGroup>
   <ItemGroup>

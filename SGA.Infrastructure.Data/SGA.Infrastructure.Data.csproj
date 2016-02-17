@@ -60,6 +60,7 @@
     <Compile Include="RegistryDsl.cs" />
     <Compile Include="Repositories\Core\BaseRepository.cs" />
     <Compile Include="Repositories\AlunoRepository.cs" />
+    <Compile Include="Repositories\CursoRepository.cs" />
     <Compile Include="Repositories\InstituicaoRepository.cs" />
   </ItemGroup>
   <ItemGroup />
