@@ -1,43 +1,49 @@
-﻿using SGA.Application.Interfaces.Core;
+﻿using AutoMapper;
+using SGA.Application.Interfaces.Core;
+using SGA.Application.ViewModel.Core;
 using SGA.Domain.Entities.Core;
 using SGA.Domain.Interfaces.Services.Core;
+using StructureMap;
 using System;
 using System.Collections.Generic;
 
 namespace SGA.Application.Services.Core
 {
-    public class AppBaseService<TEntity> : IDisposable, IAppBaseService<TEntity> where TEntity : BaseEntity
+    public class AppBaseService<TEntity, TViewModel> : IDisposable, IAppBaseService<TViewModel> where TEntity : BaseEntity where TViewModel : BaseViewModel
     {
+        private readonly IMapper _mapper;
+
         private readonly IBaseService<TEntity> _serviceBase;
 
-        public AppBaseService(IBaseService<TEntity> serviceBase)
+        public AppBaseService(IContainer iocContainer)
         {
-            _serviceBase = serviceBase;
+            _mapper = iocContainer.GetInstance<IMapper>();
+            _serviceBase = iocContainer.GetInstance<IBaseService<TEntity>>();
         }
 
-        public void Add(TEntity obj)
+        public void Add(TViewModel obj)
         {
-            _serviceBase.Add(obj);
+            _serviceBase.Add(_mapper.Map<TEntity>(obj));
         }
 
-        public TEntity GetById(int id)
+        public TViewModel GetById(int id)
         {
-            return _serviceBase.GetById(id);
+            return _mapper.Map<TViewModel>(_serviceBase.GetById(id));
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public IEnumerable<TViewModel> GetAll()
         {
-            return _serviceBase.GetAll();
+            return _mapper.Map<IEnumerable<TViewModel>>(_serviceBase.GetAll());
         }
 
-        public void Update(TEntity obj)
+        public void Update(TViewModel obj)
         {
-            _serviceBase.Update(obj);
+            _serviceBase.Update(_mapper.Map<TEntity>(obj));
         }
 
-        public void Remove(TEntity obj)
+        public void Remove(int id)
         {
-            _serviceBase.Remove(obj);
+            _serviceBase.Remove(id);
         }
 
         public void Dispose()

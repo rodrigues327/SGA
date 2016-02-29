@@ -48,6 +48,18 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AutoMapper, Version=4.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -139,7 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -247,15 +258,16 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Instituicao\Create.cshtml" />
+    <Content Include="Views\Instituicao\Delete.cshtml" />
+    <Content Include="Views\Instituicao\Details.cshtml" />
+    <Content Include="Views\Instituicao\Edit.cshtml" />
+    <Content Include="Views\Instituicao\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SGA.Application\SGA.Application.csproj">
       <Project>{eb3774e4-4322-4504-9af0-9cfcb711a7f6}</Project>
       <Name>SGA.Application</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SGA.Domain\SGA.Domain.csproj">
-      <Project>{cc06c5bc-d421-4adc-9b74-05f012b36eec}</Project>
-      <Name>SGA.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\SGA.Infrastructure.Data\SGA.Infrastructure.Data.csproj">
       <Project>{53a5bc7b-8af1-4a31-8bb9-da6b0373b818}</Project>

@@ -13,7 +13,7 @@ namespace SGA.Domain.Interfaces.Services.Core
 
         void Update(TEntity obj);
 
-        void Remove(TEntity obj);
+        void Remove(int id);
 
         void Dispose();
     }

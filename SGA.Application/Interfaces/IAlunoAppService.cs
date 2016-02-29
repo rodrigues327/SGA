@@ -1,9 +1,6 @@
-﻿using SGA.Application.Interfaces.Core;
-using SGA.Domain.Entities;
-
-namespace SGA.Application.Interfaces
+﻿namespace SGA.Application.Interfaces
 {
-    public interface IAlunoAppService : IAppBaseService<Aluno>
-    {
-    }
+    //public interface IAlunoAppService : IAppBaseService<Aluno>
+    //{
+    //}
 }

@@ -35,9 +35,10 @@ namespace SGA.Domain.Services.Core
             _repository.Update(obj);
         }
 
-        public void Remove(TEntity obj)
+        public void Remove(int id)
         {
-            _repository.Remove(obj);
+            var entity = GetById(id);
+            _repository.Remove(entity);
         }
 
         public void Dispose()

@@ -1,19 +1,19 @@
-﻿using SGA.Domain.Entities.Core;
+﻿using SGA.Application.ViewModel.Core;
 using System.Collections.Generic;
 
 namespace SGA.Application.Interfaces.Core
 {
-    public interface IAppBaseService<TEntity> where TEntity : BaseEntity
+    public interface IAppBaseService<TViewModel> where TViewModel : BaseViewModel
     {
-        void Add(TEntity obj);
+        void Add(TViewModel obj);
 
-        TEntity GetById(int id);
+        TViewModel GetById(int id);
 
-        IEnumerable<TEntity> GetAll();
+        IEnumerable<TViewModel> GetAll();
 
-        void Update(TEntity obj);
+        void Update(TViewModel obj);
 
-        void Remove(TEntity obj);
+        void Remove(int id);
 
         void Dispose();
     }

@@ -1,4 +1,5 @@
-﻿using SGA.Application.Interfaces;
+﻿using AutoMapper;
+using SGA.Application.Interfaces;
 using SGA.Application.Services;
 
 namespace SGA.Application
@@ -7,9 +8,16 @@ namespace SGA.Application
     {
         public RegistryDsl()
         {
+            #region Automapper configuration
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
+            For<IMapper>().Singleton().Use(config.CreateMapper());
+
+            #endregion Automapper configuration
+
             For<IInstituicaoAppService>().Use<InstituicaoAppService>();
-            For<IAlunoAppService>().Use<AlunoAppService>();
-            For<ICursoAppService>().Use<CursoAppService>();
+            //  For<IAlunoAppService>().Use<AlunoAppService>();
+            //  For<ICursoAppService>().Use<CursoAppService>();
         }
     }
 }

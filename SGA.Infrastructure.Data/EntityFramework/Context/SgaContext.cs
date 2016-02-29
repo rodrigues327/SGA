@@ -59,5 +59,7 @@ namespace SGA.Infrastructure.Data.EntityFramework.Context
 
             modelBuilder.Configurations.AddFromAssembly(Assembly.GetAssembly(typeof(SgaContext)));
         }
+
+        public System.Data.Entity.DbSet<SGA.Domain.Entities.Instituicao> Instituicaos { get; set; }
     }
 }

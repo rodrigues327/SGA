@@ -32,14 +32,17 @@
   <ItemGroup>
     <Compile Include="Interfaces\IAlunoAppService.cs" />
     <Compile Include="Interfaces\Core\IAppBaseService.cs" />
-    <Compile Include="Interfaces\CursoAppService.cs" />
     <Compile Include="Interfaces\IInstituicaoAppService.cs" />
+    <Compile Include="MappingProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistryDsl.cs" />
     <Compile Include="Services\AlunoAppService.cs" />
     <Compile Include="Services\Core\AppBaseService.cs" />
     <Compile Include="Services\CursoAppService.cs" />
     <Compile Include="Services\InstituicaoAppService.cs" />
+    <Compile Include="ViewModel\Core\BaseViewModel.cs" />
+    <Compile Include="ViewModel\CursoViewModel.cs" />
+    <Compile Include="ViewModel\InstituicaoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SGA.Domain\SGA.Domain.csproj">
@@ -52,6 +55,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="StructureMap, Version=4.0.1.318, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\structuremap.4.0.1.318\lib\net40\StructureMap.dll</HintPath>
       <Private>True</Private>
@@ -61,12 +69,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
